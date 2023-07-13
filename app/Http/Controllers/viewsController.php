@@ -18,4 +18,7 @@ class viewsController extends Controller
     function about(){
         return view('about');
     }
+    function details(){
+        return view('details');
+    }
 }
