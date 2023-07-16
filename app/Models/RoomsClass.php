@@ -9,4 +9,5 @@ class RoomsClass extends Model
 {
     use HasFactory;
     protected $table = 'rooms_classes';
+
 }

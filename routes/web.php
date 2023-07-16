@@ -20,7 +20,8 @@ Route::get('/rooms', [viewsController::class, 'rooms'])->name('rooms');
 
 Route::get('/about', [viewsController::class, 'about'])->name('about');
 
-Route::get('/details', [viewsController::class, 'details'])->name('details');
+
+Route::post('/details', [viewsController::class, 'details'])->name('details');
 
 
 

@@ -18,7 +18,10 @@ class viewsController extends Controller
     function about(){
         return view('about');
     }
-    function details(){
-        return view('details');
+    function details(Request $request){
+        $roomId = $request->roomId;
+
+       $roomDetails = Rooms::all()->where('id', '=', $roomId);
+        return view('details', compact('roomDetails'));
     }
 }
